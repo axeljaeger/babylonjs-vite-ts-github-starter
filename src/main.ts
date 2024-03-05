@@ -32,7 +32,7 @@ const createScene = () => {
   // Move the sphere upward 1/2 its height
   sphere.position.y = 1;
   // Built-in 'ground' shape.
-  const ground = CreateGround("ground",
+  /* const ground = */ CreateGround("ground",
     { width: 6, height: 6 }, scene);
   return scene;
 };
