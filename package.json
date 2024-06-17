@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "@babylonjs/core": "^6.44.0",
+    "@babylonjs/core": "^7.11.1",
     "typescript": "^5.2.2",
     "vite": "^5.1.4"
   }
