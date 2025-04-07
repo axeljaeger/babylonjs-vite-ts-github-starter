@@ -2,7 +2,7 @@
 
 Starter for BabylonsJS, Vite, Typescript and Github
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/axeljaeger/babylonjs-vite-ts-starter)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?repo=axeljaeger/babylonjs-vite-ts-github-starter)
 
 ## Adopting the template
 
