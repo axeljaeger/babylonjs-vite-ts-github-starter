@@ -1,12 +1,12 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.209.6/containers/python-3
 {
-    "image": "mcr.microsoft.com/devcontainers/node:22",
+    "image": "mcr.microsoft.com/devcontainers/javascript-node:22",
     "customizations": {
         "codespaces": {
           "openFiles": [
             "README.md",
-            "main.ts"
+            "src/main.ts"
           ]
         },
         "vscode": {
@@ -17,12 +17,11 @@
         }
       },
     // Use 'forwardPorts' to make a list of ports inside the container available locally.
-    "forwardPorts": [
-        4173
-    ],
+    "forwardPorts": [4173],
     // Use 'postCreateCommand' to run commands after the container is created.
     // Install app dependencies.
     "postCreateCommand": "npm ci",
+    "postStartCommand": "npm run preview",
     "portsAttributes": {
         "4173": {
             "label": "Application",
