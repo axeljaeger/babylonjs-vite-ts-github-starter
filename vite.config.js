@@ -1,5 +1,17 @@
 import { defineConfig } from 'vite';
 
+
+// vite.config.ts
+import { defineConfig } from 'vite'
+
 export default defineConfig(() => ({
-	base: 'https://axeljaeger.github.io/babylonjs-vite-ts-github-starter/',
+	base: '/',
+	server: {
+		host: true, // wichtig für Codespaces
+		port: 4173,
+		strictPort: true,
+		headers: {
+		  'Content-Type': 'text/html', // hilft Safari
+		},
+	  },
 }));
