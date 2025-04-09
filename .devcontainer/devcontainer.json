@@ -19,7 +19,7 @@
 	"postStartCommand": "npm run preview",
 	"portsAttributes": {
 		"4173": {
-			"label": "Application",
+			"label": "Vite dev server",
 			"onAutoForward": "openPreview"
 		}
 	},
