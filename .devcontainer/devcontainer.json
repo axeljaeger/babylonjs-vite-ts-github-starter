@@ -11,14 +11,11 @@
 			"extensions": ["biomejs.biome"]
 		}
 	},
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	"forwardPorts": [3000],
-	// Use 'postCreateCommand' to run commands after the container is created.
-	// Install app dependencies.
 	"postCreateCommand": "npm ci",
-	"postStartCommand": "npm run preview",
+	"postStartCommand": "npm run dev",
 	"portsAttributes": {
-		"4173": {
+		"3000": {
 			"label": "Vite dev server",
 			"onAutoForward": "openPreview"
 		}
