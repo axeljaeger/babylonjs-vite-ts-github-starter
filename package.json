@@ -11,7 +11,7 @@
 		"format": "biome format"
 	},
 	"devDependencies": {
-		"@babylonjs/core": "^8.17.0",
+		"@babylonjs/core": "^8.22.3",
 		"@biomejs/biome": "2.1.4",
 		"typescript": "^5.8.3",
 		"vite": "^7.1.2"
