@@ -12,7 +12,7 @@
 	},
 	"devDependencies": {
 		"@babylonjs/core": "^8.22.3",
-		"@biomejs/biome": "2.1.4",
+		"@biomejs/biome": "2.2.0",
 		"typescript": "^5.8.3",
 		"vite": "^7.1.2"
 	}
