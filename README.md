@@ -17,7 +17,7 @@ You have to enable github pages in your project:
 If you want to publish only on release, change the trigger in the workflow file `publish-to-pages.yml`.
 
 ## Automatic dependency upgrades
-The repository is prepared to have [dependanbot](https://github.com/dependabot) automatically create pull requests for outdated dependencies.
+The repository is prepared to have [dependabot](https://github.com/dependabot) automatically create pull requests for outdated dependencies.
 
 ## Related work:
 - https://github.com/paganaye/babylonjs-vite-boilerplate
