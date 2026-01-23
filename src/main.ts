@@ -8,6 +8,7 @@ import { HemisphericLight } from '@babylonjs/core/Lights/hemisphericLight';
 import { CreateSphere } from '@babylonjs/core/Meshes/Builders/sphereBuilder';
 import { CreateGround } from '@babylonjs/core/Meshes/Builders/groundBuilder';
 import '@babylonjs/core/Materials/standardMaterial';
+import { UiPanel } from './ui-panel';
 
 const canvas = document.getElementById('renderCanvas') as HTMLCanvasElement; // Get the canvas element
 const engine = new Engine(canvas, true); // Generate the BABYLON 3D engine
@@ -30,9 +31,13 @@ const createScene = () => {
 	sphere.position.y = 1;
 	// Built-in 'ground' shape.
 	/* const ground = */ CreateGround('ground', { width: 6, height: 6 }, scene);
-	return scene;
+	return { scene, camera };
 };
-const scene = createScene(); //Call the createScene function
+const { scene, camera } = createScene(); //Call the createScene function
+
+// Initialize UI Panel
+new UiPanel(engine, scene, camera);
+
 // Register a render loop to repeatedly render the scene
 engine.runRenderLoop(() => {
 	scene.render();
