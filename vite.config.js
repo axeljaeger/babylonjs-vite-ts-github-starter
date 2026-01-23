@@ -15,7 +15,7 @@ export default defineConfig(({ mode }) => ({
 			gzipSize: true,
 			brotliSize: true,
 		}),
-	],
+	].filter(Boolean),
 	build: {
 		rollupOptions: {
 			output: {
