@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite';
-import { visualizer } from 'rollup-plugin-visualizer';
+import { analyzer } from 'vite-bundle-analyzer';
 
 export default defineConfig(({ mode }) => ({
 	base: '/',
@@ -9,11 +9,12 @@ export default defineConfig(({ mode }) => ({
 		strictPort: true,
 	},
 	plugins: [
-		mode === 'analyze' && visualizer({
-			open: true,
-			filename: 'dist/stats.html',
-			gzipSize: true,
-			brotliSize: true,
+		mode === 'analyze' && analyzer({
+			analyzerMode: 'static',
+			fileName: 'stats',
+			reportTitle: 'Bundle Analyzer',
+			defaultSizes: 'gzip',
+			openAnalyzer: true,
 		}),
 	].filter(Boolean),
 	build: {
