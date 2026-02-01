@@ -1,12 +1,12 @@
 import './style.css';
 
-import { Engine } from '@babylonjs/core/Engines/engine';
-import { Scene } from '@babylonjs/core/scene';
 import { FreeCamera } from '@babylonjs/core/Cameras/freeCamera';
-import { Vector3 } from '@babylonjs/core/Maths/math.vector';
+import { Engine } from '@babylonjs/core/Engines/engine';
 import { HemisphericLight } from '@babylonjs/core/Lights/hemisphericLight';
-import { CreateSphere } from '@babylonjs/core/Meshes/Builders/sphereBuilder';
+import { Vector3 } from '@babylonjs/core/Maths/math.vector';
 import { CreateGround } from '@babylonjs/core/Meshes/Builders/groundBuilder';
+import { CreateSphere } from '@babylonjs/core/Meshes/Builders/sphereBuilder';
+import { Scene } from '@babylonjs/core/scene';
 import '@babylonjs/core/Materials/standardMaterial';
 
 const canvas = document.getElementById('renderCanvas') as HTMLCanvasElement; // Get the canvas element
@@ -20,7 +20,11 @@ const createScene = () => {
 	// Creates a basic Babylon Scene object
 	const scene = new Scene(engine);
 	// Creates and positions a free camera
-	const camera = new FreeCamera('camera1', initialCameraPosition.clone(), scene);
+	const camera = new FreeCamera(
+		'camera1',
+		initialCameraPosition.clone(),
+		scene,
+	);
 	// Targets the camera to scene origin
 	camera.setTarget(initialCameraTarget);
 	// This attaches the camera to the canvas
