@@ -13,7 +13,7 @@ const canvas = document.getElementById('renderCanvas') as HTMLCanvasElement; // 
 const engine = new Engine(canvas, true); // Generate the BABYLON 3D engine
 
 // Store initial camera position for reset
-const initialCameraPosition = new Vector3(0, 5, -10)
+const initialCameraPosition = new Vector3(0, 5, -10);
 const initialCameraTarget = Vector3.Zero();
 
 const createScene = () => {
