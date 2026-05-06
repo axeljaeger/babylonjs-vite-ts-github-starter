@@ -12,7 +12,7 @@
 		"format:fix": "biome format --fix"
 	},
 	"devDependencies": {
-		"@babylonjs/core": "8.56.2",
+		"@babylonjs/core": "9.5.1",
 		"@biomejs/biome": "2.4.9",
 		"typescript": "6.0.3",
 		"vite": "8.0.10"
