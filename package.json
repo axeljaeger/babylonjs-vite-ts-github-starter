@@ -15,6 +15,6 @@
 		"@babylonjs/core": "9.31.2",
 		"@biomejs/biome": "2.5.15",
 		"typescript": "7.0.2",
-		"vite": "8.3.4"
+		"vite": "8.3.5"
 	}
 }
